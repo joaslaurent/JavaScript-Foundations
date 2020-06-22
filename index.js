@@ -38,6 +38,11 @@ Hint #2: you'll need to use the `math` object for parts of this calculation!
 When your math is correct, monthlyRate will equal 1073.64
 */
 
+let n1 = math.pow(1+monthlyInterestRate, periods);
+let numerator = p*n1*monthlyInterestRate;
+let denominator = n1 - 1;
+let monthlyRate = numerator/denominator;
+console.log(monthyRate);
 
 
 
