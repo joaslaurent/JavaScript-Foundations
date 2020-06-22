@@ -3,23 +3,26 @@
 // 🏡 Task 1: Variables
 /* Create variables for principal, interest rate, and years. Assign them the values 200000, 0.05, and 30 respectively. Create another value called name and give it the value of your own name.
 */
-
+let p = 200000;
+const i = 0.05;
+const y = 30;
 
 
 
 
 // 🏡 Task 1.5: Simple Math
-/* To create a monthly mortgage rate calculator, we need to know the number of years in months and the monthly interest rate. 
+/* To create a monthly mortgage rate calculator, we need to know the number of years in months and the monthly interest rate.
 
-(1) Create a variable called `monthlyInterestRate` and give it the value of interest rate divided by 12. 
+(1) Create a variable called `monthlyInterestRate` and give it the value of interest rate divided by 12.
 (2) Create another variable called `periods` and give it the value of years*12.
 */
-
+var monthlyInterestRate = i/12;
+var periods = y*12;
 
 
 
 // 🏡 Task 2: Harder Math
-/* Create your calculator! Use the formula in the ReadMe (also below) to run calculations on your numbers. Save the final value into a variable called monthlyRate. 
+/* Create your calculator! Use the formula in the ReadMe (also below) to run calculations on your numbers. Save the final value into a variable called monthlyRate.
 
 M = P [ I ( 1 + I )^N ] / [ ( 1 + I )^N – 1 ]
 
@@ -27,7 +30,7 @@ Hint: while these calculations can be done in one line, it might be helpful to c
 
 (1) Create a variable called n1 and set it equal to  (1 + monthlyInterestRate )^N
 (2) Create a variable called numerator and set it equal to p * n1 * monthlyInterestRate
-(3) Create a variable called denominator and set it equal to n1 - 1 
+(3) Create a variable called denominator and set it equal to n1 - 1
 (4) Create a variable called monthlyRate and set it equal to numerator/denominator
 
 Hint #2: you'll need to use the `math` object for parts of this calculation!
@@ -64,7 +67,7 @@ mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 
 Then, add control flow within your function such that IF creditScore is above 740, interest rate drops by 0.5%, if credit score is below 660, interest rate increases by 0.5% and if credit score is anywhere between 660 and 740 interest rate doesn't change.
 
-Hint: To drop an interest rate by 5% you can take monthlyRate and multiply it by 0.95. Similarly, to increase an interest rate by 5% you'd do monthlyRate * 1.05. 
+Hint: To drop an interest rate by 5% you can take monthlyRate and multiply it by 0.95. Similarly, to increase an interest rate by 5% you'd do monthlyRate * 1.05.
 */
 
 
